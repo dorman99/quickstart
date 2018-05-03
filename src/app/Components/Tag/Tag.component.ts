@@ -2,18 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'User',
-  template: `
-  <h1>add new tag : {{name}}</ h1>
-  <Hobby> </Hobby>
-  <hr/>
-  <h3>list of language : </h3>
-  <ul>
-    <li *ngFor= "let tag of tags" > {{tag.name}} value: {{tag.value}}</li>
-  </ul>
-  <form (submit)= "addNewTag()">
-  <input placeholder= "input new language " name="name" [(ngModel)]= "name"/>
-  </form>
-  `,
+  moduleId: module.id,
+  templateUrl: 'Tag.component.html',
 })
 export class UserComponent  { 
     name: string ;
